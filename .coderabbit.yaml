@@ -1,0 +1,13 @@
+reviews:
+  auto_review: true
+  request_changes_on:
+    - security_issue
+    - performance_issue
+    - missing_tests
+    - large_pr
+
+thresholds:
+  max_pr_lines: 400
+
+enforcement:
+  block_merge_on_requested_changes: true

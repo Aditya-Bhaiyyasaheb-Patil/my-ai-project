@@ -1,0 +1,21 @@
+execution_mode: strict
+
+gsd:
+  enabled: true
+  rules_file: .ai/GSD.md
+  atomic_only: true
+  require_validation: true
+
+ralph_loop:
+  enabled: true
+  prd_source: .ai/PRD.md
+  max_iterations: 6
+  stop_condition: all_checks_pass
+
+verification:
+  required_commands:
+    - echo "Add your test command here"
+
+limits:
+  max_files_per_iteration: 5
+  max_lines_per_iteration: 300
